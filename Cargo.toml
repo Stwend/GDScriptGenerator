@@ -1,0 +1,11 @@
+[package]
+name = "gdscript_generator"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+
+[dependencies]
+godot = { git = "https://github.com/godot-rust/gdext", branch = "master"}
