@@ -27,8 +27,8 @@ impl INode for GDScriptTester {
 		
 		let mut script = GDScript::new_gd();
 		script.set_source_code(source.into());
+		self.base_mut().set_script(script.clone().to_variant());
 		script.reload();
-		self.base_mut().set_script(script.to_variant());
 	}
 }
 
